@@ -165,7 +165,7 @@ producing better results to no avail.
   
 
 <p align="center">
-  <img src="figure3.png" alt="AgeCNN"/>
+  <img src="figure4.png" alt="AgeCNN"/>
   <br/>
   <em>Figure 4: AgeCNN Accuracy Curve</em>
 </p>
