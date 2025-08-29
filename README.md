@@ -120,13 +120,24 @@ Starting with the analysis of the gender CNN, we have the loss curves in Figure 
 gender model, the loss consistently decreased with subsequent epochs, showing little signs
 of overfitting due to the low validation loss.
 
+<p align="center">
+  <img src="figure1.png" alt="GenderCNN"/>
+  <br/>
+  <em>Figure 1: GenderCNN Training and Validation Loss Curves</em>
+</p>
 
-Figure 1: GenderCNN Training and Validation Loss Curves
 The validation accuracy consistently increased over the five epochs, reaching 84%
 accuracy by the end as shown in Figure 2. The accuracy did not seem to be increasing with
 any further architecture or hyperparameter adjustments which led me to my theory on the
 nature of the classification.
-Figure 2: GenderCNN Accuracy Curve
+
+
+<p align="center">
+  <img src="figure2.png" alt="GenderCNN"/>
+  <br/>
+  <em>Figure 2: GenderCNN Accuracy Curve</em>
+</p>
+
 I believed that the model was performing well on images of adults, but struggling on images
 of young children that do not have distinct sexual characteristics. I created a separate
 evaluation loop that would return separate accuracies for children 2 and under and
@@ -143,8 +154,21 @@ initial results seemed promising, the results were not reproducible. Subsequent 
 the network could not reproduce the original promising results. The architecture currently
 uses the same as the GenderCNN, though it has been modified several times with hopes of
 producing better results to no avail.
-Figure 3: AgeCNN Training and Validation Loss Curves
-Figure 5: AgeCNN Accuracy Curve
+
+
+<p align="center">
+  <img src="figure3.png" alt="AgeCNN"/>
+  <br/>
+  <em>Figure 3: AgeCNN Training and Validation Loss Curves</em>
+</p>
+  
+
+<p align="center">
+  <img src="figure3.png" alt="AgeCNN"/>
+  <br/>
+  <em>Figure 4: AgeCNN Accuracy Curve</em>
+</p>
+
 The reason for this discrepancy between the two models is currently unknown. One
 possible explanation is that certain age groups are underrepresented, and the majority of
 images come from people ages 20 to 40, producing results only within those ranges.
